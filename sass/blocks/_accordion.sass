@@ -1,0 +1,51 @@
+.accordion
+    margin-top: 63px
+    &__item
+        display: flex
+        margin-top: 45px
+        &:first-child
+            margin-top: 0
+        &-content
+            width: 573px
+            padding-top: 30px
+        &-title
+            +text
+            font-weight: 700
+        &-text
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 130px
+            margin-top: 20px
+            +text
+            display: none
+            strong
+                font-weight: 700
+                color: $main-color
+        &--active
+            .accordion__btn
+                background: linear-gradient(180deg, $main-color 0%, #FF3F84 100%)
+            .accordion__item-text
+                display: flex
+            .accordion__btn-plus
+                transform: rotate(45deg)
+            .accordion__btn-plus path
+                fill: #ffffff
+    &__btn
+        display: block
+        width: 70px
+        height: 70px
+        border-radius: 100%
+        border: 1px solid $main-color
+        background-color: transparent
+        +center
+        margin-right: 30px
+        outline: none
+        cursor: pointer
+        &:hover
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6)
+        
+                
+
+            
+
